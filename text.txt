@@ -1,0 +1,7 @@
+The leap second concept was first introduced in 1972 by the International Earth Rotation and Reference Systems Service (IERS) in an attempt to periodically update Coordinated Universal Time (UTC) due to imprecise observed solar time (UT1) and the long-term slowdown in the Earth’s rotation. This periodic adjustment mainly benefits scientists and astronomers as it allows them to observe celestial bodies using UTC for most purposes. If there were no UTC correction, then adjustments would have to be made to the legacy equipment and software that synchronize to UTC for astronomical observations.
+
+As of today, since the introduction of the leap second, UTC has been updated 27 times.
+
+While the leap second might have been an acceptable solution in 1972, when it made both the scientific community and the telecom industry happy, these days UTC is equally bad for both digital applications and scientists, who often choose TAI or UT1 instead.
+
+At Meta, we are supporting an industry effort to stop future introductions of leap seconds and stay at a current level of 27. Introducing new leap seconds is a risky practice that does more harm than good, and we believe it is time to introduce new technologies to replace it.

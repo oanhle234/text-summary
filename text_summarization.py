@@ -19,7 +19,7 @@ doc = nlp(text)
 # Separate each word in a sentence
 tokens = [token.text for token in doc]
 
-# Convert text lower. Ignore words in stop words list, punctuation. 
+# Convert to lowercase. Ignore words in stop words list, punctuation. 
 # And count the number of occurrences of a word
 word_frequencies = {}
 for word in doc:
@@ -50,7 +50,7 @@ for sent in sentence_tokens:
             else:
                 sentence_scores[sent] += word_frequencies[word.text.lower()]
 
-# Choose the sentence with the appropriate length for the condition
+# Choose the sentences with the appropriate length for the condition
 select_lenght = int(len(sentence_tokens)*0.4)
 
 # Sort the sentences in select_lenght by score from highest to lowest
